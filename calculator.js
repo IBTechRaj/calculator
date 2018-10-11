@@ -53,8 +53,13 @@ if(calcDone){
 doAllClear();
 calcDone=false;
 }
+if (e.target.textContent == '.'){
+var str=num;
+if (str.substr(str.length-1,str.length)===e.target.textContent){
+return;
+}
+}
 
- 
 num+=e.target.textContent;
 	h2.textContent=num;
 
