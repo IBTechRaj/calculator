@@ -71,7 +71,7 @@ var getOps = function (e) {
 	calcDone=false;
 	prevOp=op;
 //console.log(e.target.textContent);
-
+if(num.length == 0) return;
 op=e.target.textContent;
 if(n1==0){
 	n1=parseFloat(num);
